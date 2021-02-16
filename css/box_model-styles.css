@@ -1,0 +1,102 @@
+
+/*--- Universal Attributes ----------------------------------------------------*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/*--- Html Element Selectors -------------------------------------------------*/
+
+/*--- Class & ID Selectors Styles ----------------------------------------------------------*/
+
+/*--- LAYOUT STYLES ----------------------------------------------------------*/
+
+/*--- Box Model Borders & Layout -------------------------------------------------*/
+
+body {
+  border: 3px solid blue;
+  background-color: lightgray;
+}
+
+header, main, footer {
+  border: 3px solid black;
+}
+
+div {
+  border: 3px solid red;
+}
+
+h1, h2, p, img, ul, li {
+  border: 3px solid green;
+}
+
+footer {
+  display: block;
+}
+
+
+/*--- Container Layout ---------------------------------------------------------*/
+
+.box_model_first_box {
+  width: 95%;
+  margin: auto;
+  display: flex;
+}
+
+.box_model_textbox1 {
+  width: 50%;
+  float: left;
+}
+
+.box_model_textbox1_img {
+  width: 50%;
+  float: right;
+  text-align: center;
+  position: relative;
+}
+
+/*--- CONTENT STYLES ---------------------------------------------------------*/
+
+/*--- Text Styles ----------------------------------------------------------*/
+
+.color-blue {
+  color: blue;
+}
+
+.color-black {
+  color: black;
+}
+
+.color-red {
+  color: red;
+}
+
+.color-green {
+  color: green;
+}
+
+.box_model_h1 {
+  text-align: center;
+}
+
+.box_model_h2_1 {
+  text-align: center;
+}
+
+.box_model_p_1, .box_model_p_2 {
+  text-indent: 1em;
+}
+
+/*--- Picture Styles ----------------------------------------------------------*/
+
+.pic-sunset {
+  width: 100%;
+  height: 100%;
+  max-width: 200px;
+  max-height: 300px;
+}
+
+/*--- Media Queries ----------------------------------------------------------*/

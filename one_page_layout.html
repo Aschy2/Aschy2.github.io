@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+
+  <head>
+    <meta charset="utf-8">
+    <title>One Page Layout Example!</title>
+    <link rel="stylesheet" href="css/main-styles.css">
+    <link rel="stylesheet" href="css/one_page_layout.css">
+    <script src="JS/madlib_creation.js"></script>
+    <script src="JS/madlib_library.js"></script>
+  </head>
+
+
+  <body>
+    <div class="wrapper"> <!-- Start wrapper div -->
+
+      <header class="main-header">
+          <div class="home_page_title_logo center-text">
+            <h1>One Page Layout</h1>
+          </div>
+
+          <!-- NAV BAR -->
+          <div class="orig-nav-bar">
+              <div class="hide-nav">
+                <nav class="main-nav-bar">
+                  <ul class="main-nav-bar-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="box_model.html">Box Model</a></li>
+                    <li><a href="JS_madlib.html">Mad Lib</a></li>
+                    <li><a href="#">One Page Layout</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          <!-- NAV BAR END-->
+          <!-- NAV BAR ONE PAGE -->
+          <div class="one-page-nav-bar-container">
+            <nav class="one-page-nav-bar">
+              <ul class="one-page-nav-bar-ul">
+                <li><a href="#">Home</a></li>
+                <li><a href="#mad-lib">Mad Lib</a></li>
+                <li><a href="#box-model">Box Model</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- NAV BAR ONE PAGE END-->
+      </header>
+
+      <main>
+        <div class="main-content">
+          <div class="mad-lib-parent">
+            <div id="mad-lib" class="mad-lib-containers">
+              <div class="mad-lib-containers2">
+                <h2 class="center-text">Mad Lib Fun!</h2>
+                <p class="center-text">You can use the tool below to create your own story!</p>
+                <div id="choose-mad-lib" class="choose-mad-lib clearfix center-text dont-print">
+                  <h3>Mad Lib Menu</h3>
+                  <p>Please choose a Mad Lib (There is a drop down list in the text field).</p>
+                  <label id="choice-label" for="choice-text">Mad Lib:</label>
+                  <input list="choice-list" id="choice-text" type="text" name="choice-text" value="">
+                  <datalist class="choice-text-list" id="choice-list">
+                    <option value="Zoo Story">
+                    <option value="Amusement Park Story">
+                  </datalist>
+                  <input id="choice-button" type="button" name="choice-button" value="Choose" onclick="chooseMadLib()">
+                </div>
+                <div id="ZooMadLib" class="ZooMadLib">
+                  <h2 class="center-text">A trip to the zoo! - Mad Lib</h2>
+                  <div class="input-container">
+                    <div class="input-margin center-text">
+                      <label for="input" id="label">Please enter an adjective:</label>
+                      <input type="text" id="input" name="input" value="adjective">
+                      <input type="button" id="submit" name="submit" value="Submit" onclick="functionSubmit()">
+                      <p class="center-text" id="madlib">You're story will replace this text when you complete it.</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="NewMadLib" class="NewMadLib">
+                  <h2 class="center-text">A trip to the amusement park! - Mad Lib</h2>
+                  <div class="input-container2">
+                    <div class="input-margin center-text">
+                      <label for="input2" id="label2">Please enter an adjective:</label>
+                      <input type="text" id="input2" name="input2" value="adjective">
+                      <input type="button" id="submit2" name="submit2" value="Submit" onclick="functionSubmit2()">
+                      <p class="center-text" id="madlib2">You're story will replace this text when you complete it.</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="reset-container" class="reset-container dont-print">
+                  <input type="button" name="save" value="Print Mad Lib" onclick="window.print();">
+                  <input type="button" name="reset" value="Reset Mad Lib" onclick="resetMadLib()">
+                  <input type="button" name="return" value="Reset and Return to Menu" onclick="returnMadLib()">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-above-box1">
+          </div>
+
+        <div class="box-model-parent">
+          <div id="box-model" class="box1">
+            <div class="box2 center-text">
+              <h2 class="">What is the Box Model and why do we use it?</h2>
+              <div class="flex-parent">
+                <div class="box_model_textbox1 flex-weight1">
+                  <h3 class="box_model_h2_1">The Box Model is nessecary to understand!</h3>
+                  <p class="box_model_p_1">The box model is how HTML information is displayed by websites, which is manipulated by CSS. There is a number of things that you can do with the box model,
+                    you can allow pictures to occupy space beside paragraphs, navigation bars to be static, lists to on the same line of text, and so much more. To do this you need
+                    to understand how the <code>"display"</code> attribute works in CSS.</p>
+                  <p class="box_model_p_2">You have probably noticed on this page that everything has a coloured border. Each is a different HTML element, for example: The body element is bordered <span class="color-blue">blue</span>, the header/body/footer elements are bordered <span class="color-black">black</span>, the div containers are bordered <span class="color-red">red</span>, and the headings and paragraphs are bordered <span class="color-green">green</span>.</p>
+                </div>
+                <div class="flex-weight2">
+                  <img class="pic-sunset size-300px" src="img/sunset.jpg" alt="A picture of a sunset, to help visualize the html/css box model">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </main>
+
+    </div> <!-- End wrapper div -->
+
+      <footer class="footer-parent">
+        <div class="footer">
+        <div class="hr-footer">
+        </div>
+        <p class="indent-text">&copy 2021</p>
+        </div>
+      </footer>
+
+
+  </body>
+
+
+</html>

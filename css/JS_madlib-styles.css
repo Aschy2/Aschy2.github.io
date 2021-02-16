@@ -1,0 +1,58 @@
+
+/*--- Universal Attributes ----------------------------------------------------*/
+
+/*--- Html Element Selectors -------------------------------------------------*/
+
+/*--- Class & ID Selectors Styles ----------------------------------------------------------*/
+
+/*--- LAYOUT STYLES ----------------------------------------------------------*/
+
+/*--- Container Layout ---------------------------------------------------------*/
+
+.main-content {
+  margin: 0 2%;
+}
+
+.mad-lib-containers {
+}
+
+.input-container, .input-container2 {
+  text-align: center;
+}
+
+.choose-mad-lib {
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.ZooMadLib {
+  display: none;
+}
+
+.NewMadLib {
+  display: none;
+}
+
+.reset-container {
+  text-align: center;
+  display: none;
+}
+
+.input-margin {
+  margin: 0 2%;
+}
+
+/*--- CONTENT STYLES ---------------------------------------------------------*/
+
+/*--- Text Styles ----------------------------------------------------------*/
+
+/*--- Picture Styles ----------------------------------------------------------*/
+
+/*--- Media Queries ----------------------------------------------------------*/
+
+@media print {
+.dont-print {
+  display: none;
+  visibility: hidden;
+}
+}

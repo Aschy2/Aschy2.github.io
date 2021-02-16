@@ -1,0 +1,222 @@
+
+/*--- Universal Attributes ----------------------------------------------------*/
+
+* {
+  color: #576c91;
+}
+
+/*--- Html Element Selectors -------------------------------------------------*/
+
+body {
+  margin: 0;
+}
+
+/*--- Class & ID Selectors Styles ----------------------------------------------------------*/
+
+.ZooMadLib {
+  display: none;
+}
+
+.NewMadLib {
+  display: none;
+}
+
+.reset-container {
+  text-align: center;
+  display: none;
+}
+
+/*--- LAYOUT STYLES ----------------------------------------------------------*/
+
+/*--- Container Layout ---------------------------------------------------------*/
+
+
+
+/* One Page Navigation Bar */
+
+.one-page-nav-bar-container {
+  background-color: #576c91;
+  width: 100%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.one-page-nav-bar-ul {
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.one-page-nav-bar-ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.one-page-nav-bar-ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.one-page-nav-bar-ul li a:hover {
+  color: darkgrey;
+  transition: color 0.25s ease-in-out;
+}
+
+/* One Page Navigation Bar End */
+/* Original Navigation Bar (This one page layout page will use its own one page nav bar not the one from the rest of the site) */
+.orig-nav-bar {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 5px;
+  right: 5px;
+  background: url("../img/hamburger_button.png") no-repeat center;
+  background-size: cover;
+  background-color: white;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.nav-bar-container {
+  height: 0px;
+}
+
+.hide-nav {
+  display: none;
+}
+
+.orig-nav-bar:hover {
+  transition: height .5s;
+  height: 150px;
+  transition: width 1s;
+  width: 150px;
+  background: #576c91;
+  border-radius: 8px;
+  top: 5px;
+  right: 5px;
+}
+
+.main-nav-bar-ul {
+  margin: 5px;
+  padding: 0;
+}
+
+.orig-nav-bar:hover .main-nav-bar-ul li {
+  display: block;
+}
+
+.orig-nav-bar:hover .main-nav-bar-ul li a {
+  display: block;
+  margin: 5px;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+}
+
+.orig-nav-bar:hover .main-nav-bar-ul li a:hover {
+  color: darkgrey;
+  transition: color 0.25s ease-in-out;
+}
+
+.orig-nav-bar:hover .hide-nav {
+  display: block;
+}
+/* Original Navigation Bar End */
+
+
+
+/*--- CONTENT STYLES ---------------------------------------------------------*/
+
+/*--- Text Styles ----------------------------------------------------------*/
+
+/*--- Picture Styles ----------------------------------------------------------*/
+
+/*--- Media Queries ----------------------------------------------------------*/
+
+@media (min-width: 768px) {
+
+  html {
+    margin-top: .25%;
+  }
+
+  .wrapper {
+    width: 90%;
+    height: 880px;
+    position: relative;
+    margin: auto;
+    border: 1px solid #576c91;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .mad-lib-containers {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 100px;
+  }
+
+  .hr-above-box1 {
+    position: absolute;
+    top: 430px;
+    width: 100%;
+    height: 5px;
+    background-color: #576c91;
+  }
+
+  .box1 {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 450px;
+    min-height: 400px;
+  }
+
+  .mad-lib-containers2 {
+    margin: auto;
+    width: 96%;
+  }
+
+  .box2 {
+    margin: auto;
+    width: 96%;
+  }
+
+  .hr-footer {
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    height: 5px;
+    background-color: #576c91;
+  }
+
+  .footer {
+    position: absolute;
+    width: 100%;
+    top: 900px;
+  }
+}
+
+@media (max-width: 768px) {
+
+ body {
+     margin: auto;
+ }
+}
+
+@media (max-width: 480px) {
+ .all-content {
+   width: 100%;
+ }
+
+ body {
+   margin: auto;
+ }
+}

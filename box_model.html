@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>My Box Models!</title>
+    <link rel="stylesheet" href="css/main-styles.css">
+    <link rel="stylesheet" href="css/box_model-styles.css">
+  </head>
+
+  <body>
+    <div> <!-- Start wrapper div -->
+
+      <header>
+        <div class="box_model_title_logo">
+          <h1 class="box_model_h1">A Page about Box Models</h1>
+        </div>
+
+        <!-- NAV BAR -->
+        <div class="navigation_container">
+          <nav class="main-nav-bar">
+            <ul class="main-nav-bar-ul">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Box Model</a></li>
+              <li><a href="JS_madlib.html">Mad Lib</a></li>
+              <li><a href="one_page_layout.html">One Page Layout</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- NAV BAR END-->
+      </header>
+
+      <main>
+        <div class="box_model_first_box clearfix">
+          <div class="box_model_textbox1">
+            <h2 class="box_model_h2_1">The Box Model is nessecary to understand!</h2>
+            <p class="box_model_p_1">The box model is how HTML information is displayed by websites, which is manipulated by CSS. There is a number of things that you can do with the box model,
+              you can allow pictures to occupy space beside paragraphs, navigation bars to be static, lists to on the same line of text, and so much more. To do this you need
+              to understand how the <code>"display"</code> attribute works in CSS.</p>
+            <p class="box_model_p_2">You have probably noticed on this page that everything has a coloured border. Each is a different HTML element, for example: The body element is bordered <span class="color-blue">blue</span>, the header/body/footer elements are bordered <span class="color-black">black</span>, the div containers are bordered <span class="color-red">red</span>, and the headings and paragraphs are bordered <span class="color-green">green</span>.</p>
+          </div>
+          <div class="box_model_textbox1_img">
+            <img class="pic-sunset center-img" src="img/sunset.jpg" alt="A picture of a sunset, to help visualize the html/css box model">
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy 2021</p>
+      </footer>
+
+    </div> <!-- End wrapper div -->
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+
+  <head>
+    <meta charset="utf-8">
+    <title>Mad Lib!</title>
+    <link rel="stylesheet" href="css/main-styles.css">
+    <link rel="stylesheet" href="css/JS_madlib-styles.css">
+    <script src="JS/madlib_creation.js"></script>
+    <script src="JS/madlib_library.js"></script>
+  </head>
+
+
+  <body>
+    <div> <!-- Start wrapper div -->
+
+      <header class="main-header dont-print">
+          <div class="home_page_title_logo">
+            <h1 class="center-text">A Mad Lib that you make thats been programmed with JavaScript!</h1>
+          </div>
+
+          <!-- NAV BAR -->
+          <div class="nav-bar-container">
+            <nav class="main-nav-bar">
+              <ul class="main-nav-bar-ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="box_model.html">Box Model</a></li>
+                <li><a href="#">Mad Lib</a></li>
+                <li><a href="one_page_layout.html">One Page Layout</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- NAV BAR END-->
+      </header>
+
+      <main>
+        <div class="main-content clearfix">
+          <div class="mad-lib-containers">
+            <div id="choose-mad-lib" class="choose-mad-lib clearfix center-text dont-print">
+              <h2>Mad Lib Menu</h2>
+              <p>Please choose a Mad Lib (There is a drop down list in the text field).</p>
+              <label id="choice-label" for="choice-text">Mad Lib:</label>
+              <input list="choice-list" id="choice-text" type="text" name="choice-text" value="">
+              <datalist class="choice-text-list" id="choice-list">
+                <option value="Zoo Story">
+                <option value="Amusement Park Story">
+              </datalist>
+              <input id="choice-button" type="button" name="choice-button" value="Choose" onclick="chooseMadLib()">
+            </div>
+            <div id="ZooMadLib" class="ZooMadLib">
+              <h2 class="center-text">A trip to the zoo! - Mad Lib</h2>
+              <div class="input-container">
+                <div class="input-margin">
+                  <label for="input" id="label">Please enter an adjective:</label>
+                  <input type="text" id="input" name="input" value="adjective">
+                  <input type="button" id="submit" name="submit" value="Submit" onclick="functionSubmit()">
+                  <p class="center-text" id="madlib">You're story will replace this text when you complete it.</p>
+                </div>
+              </div>
+            </div>
+            <div id="NewMadLib" class="NewMadLib">
+              <h2 class="center-text">A trip to the amusement park! - Mad Lib</h2>
+              <div class="input-container2">
+                <div class="input-margin">
+                  <label for="input2" id="label2">Please enter an adjective:</label>
+                  <input type="text" id="input2" name="input2" value="adjective">
+                  <input type="button" id="submit2" name="submit2" value="Submit" onclick="functionSubmit2()">
+                  <p class="center-text" id="madlib2">You're story will replace this text when you complete it.</p>
+                </div>
+              </div>
+            </div>
+            <div id="reset-container" class="reset-container dont-print">
+              <input type="button" name="save" value="Print Mad Lib" onclick="window.print();">
+              <input type="button" name="reset" value="Reset Mad Lib" onclick="resetMadLib()">
+              <input type="button" name="return" value="Reset and Return to Menu" onclick="returnMadLib()">
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy 2021</p>
+      </footer>
+
+    </div> <!-- End wrapper div -->
+  </body>
+
+
+</html>
